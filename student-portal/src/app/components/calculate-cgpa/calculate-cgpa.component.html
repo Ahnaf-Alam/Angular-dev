@@ -1,0 +1,15 @@
+<app-result-sidebar></app-result-sidebar>
+
+<div class="container">
+    <h1 style="color:rgb(68, 68, 180); text-align: center;">Calculate your cgpa here</h1>
+    <form (ngSubmit)="calculateResult()">
+        <div class="mb-3">
+        <label for="studentId" class="form-label">Student Id</label>
+        <input [(ngModel)]="result.studentId" name ="studentId" type="text" class="form-control" id="studentId" >
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+<div class="container">
+    <p>Your CGPA is : {{totalCGPA}}</p>
+</div>

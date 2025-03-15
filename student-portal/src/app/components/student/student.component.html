@@ -1,0 +1,20 @@
+<div class="containerstudent">
+    <h1 style="color: rgb(68, 68, 220);">Student information</h1>
+    <form (ngSubmit)="addStudent()">
+        <div class="mb-3">
+        <label for="firstName" class="form-label">First name</label>
+        <input [(ngModel)]="student.firstName" name ="firstName" type="text" class="form-control" id="firstName" >
+        </div>
+        <div class="mb-3">
+        <label for="lastName" class="form-label">Last name</label>
+        <input [(ngModel)]="student.lastName" name="lastName" type="text" class="form-control" id="lastName">
+        </div>
+        <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input [(ngModel)]="student.address" name="address" type="text" class="form-control" id="address">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <app-sidebar></app-sidebar>
+

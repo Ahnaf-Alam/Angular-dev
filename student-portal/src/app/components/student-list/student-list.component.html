@@ -1,0 +1,7 @@
+
+<app-sidebar></app-sidebar>
+<h1>Student with their name and address</h1>
+<div class="container" *ngFor="let student of studentList">
+     <p>Name : {{student.firstName}} {{student.lastName}}</p>
+     <p>Address : {{student.address}}</p>
+</div>

@@ -1,0 +1,20 @@
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+          <button type="button" class="btn btn-light" (click)="subjectList()">Subject List</button>
+          <button type="button" class="btn btn-light" (click)="onClickUpdateSubject()">Update Subject</button>
+          <button type="button" class="btn btn-light" (click)="assignSubject()">Assign Subject</button>
+          
+      </div>
+    </div>
+</nav>
+<div class="containersubject">
+    <h1 style="color: rgb(80, 80, 224); text-align:center;">ALL SUBJECT TITLE</h1>
+    <div *ngFor="let sub of subject">
+        <ul>
+            <li>{{sub.subjectTitle}}</li>
+        </ul>
+         
+    </div>
+</div>
